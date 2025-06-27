@@ -175,7 +175,7 @@ function Home({ PhotoCarousel, RecentNews, SponsoredProjects, ProfileNoticeBoard
           <div className="w-full md:w-1/4 mt-8 md:mt-0 flex justify-center">
             <div className="relative group overflow-hidden rounded-full">
               <img
-                src="/src/assets/gallery/skaddya.png"
+                src="/Professor_website/assets/skaddya.png"
                 alt="Dr. Sourav Kaddya"
                 className="w-[440px] h-[460px] object-cover"
                 loading="eager"

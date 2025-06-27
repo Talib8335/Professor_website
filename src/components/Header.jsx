@@ -33,7 +33,7 @@ function Header() {
         {/* Logo */}
         <div className="flex items-center space-x-3">
           <img
-            src={isDark ? "/src/assets/nitklogow.png" : "/src/assets/nitk.png"} // Logo changes based on dark mode
+            src={isDark ? "/Professor_website/assets/nitklogow.png" : "/Professor_website/assets/nitk.png"} // Logo changes based on dark mode
             alt="College Logo"
             className="h-16 transition-all duration-300 hover:scale-105"
             onError={(e) => { e.target.src = 'https://via.placeholder.com/64'; }}
