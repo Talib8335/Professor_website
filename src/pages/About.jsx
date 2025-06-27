@@ -54,7 +54,7 @@ function About() {
       year: "Dec 2019",
       desc: "Pioneered multi-cloud system architectures under Dr. Soumya Kanti Ghosh and Dr. Sandip Chakraborty, developing decentralized cloud markets.",
       researchArea: "Multi-Cloud System Architectures",
-      logo: "/Professor_website/assets/iitkgp1.png", // Placeholder logo
+      logo: "/Professor_website/public/assets/iitkgp1.png", // Placeholder logo
       website: "https://www.iitkgp.ac.in/", // Institutional website
     },
     {
@@ -71,9 +71,9 @@ function About() {
       title: "M.Tech., Computer Science & Engineering",
       institution: "NIT Rourkela, India",
       year: "Jun 2010",
-      desc: "Explored secure communication in wireless sensor networks, earning a GATE scholarship.",
+      desc: "Explored secure communication in wireless sensor networks, earning a GATE scholarship",
       dissertation: "A Technique for Communication of Distance Node on Key Pre-distribution in Wireless Sensor Networks",
-      logo: "/Professor_website/assets/nitrkl.png", // Placeholder logo
+      logo: "/Professor_website/public/assets/nitrkl.png", // Placeholder logo
       website: "https://www.nitrkl.ac.in/", // Institutional website
     },
     {
@@ -81,7 +81,7 @@ function About() {
       institution: "West Bengal University of Technology, India",
       year: "Jun 2007",
       desc: "Built a strong foundation in computer engineering, sparking a passion for technology.",
-      logo: "/Professor_website/assets/wbu.png", // Placeholder logo
+      logo: "/Professor_website/public/assets/wbu.png", // Placeholder logo
       website: "https://www.wbut.ac.in/", // Institutional website
     },
   ];
@@ -92,7 +92,7 @@ function About() {
       institution: "NIT Karnataka, Surathkal, India",
       year: "Dec 2019 – Present",
       location: "Surathkal, Karnataka, India",
-      logo: "/Professor_website/assets/nitk.png", // Replace with actual path or URL
+      logo: "/Professor_website/public/assets/nitk.png", // Replace with actual path or URL
       desc: "Leading courses like Cloud Computing and Next Generation Cloud Architecture, mentoring Ph.D./M.Tech. students in serverless and fog-edge research.",
     },
     {
@@ -100,7 +100,7 @@ function About() {
       institution: "IIT Kharagpur, India",
       year: "May 2018 – Dec 2019",
       location: "Kharagpur, West Bengal, India",
-      logo: "/Professor_website/assets/iitkgp.png", // Replace with actual path or URL
+      logo: "/Professor_website/public/assets/iitkgp.png", // Replace with actual path or URL
       desc: "Developed decentralized cloud systems with Dr. Soumya Kanti Ghosh and Dr. Sandip Chakraborty, published at IEEE SCC 2019 (Core-A).",
     },
     {
@@ -108,7 +108,7 @@ function About() {
       institution: "San Diego State University, CA, USA",
       year: "Jan – Mar 2015",
       location: "San Diego, California, USA",
-      logo: "/Professor_website/assets/sdsu.png", // Replace with actual path or URL
+      logo: "/Professor_website/public/assets/sdsu.png", // Replace with actual path or URL
       desc: "Explored networking solutions at the Wireless Networking Research Lab under Dr. Mahasweta Sarkar.",
     },
     {
@@ -116,7 +116,7 @@ function About() {
       institution: "Indian Statistical Institute, Kolkata, India",
       year: "May – Jul 2009",
       location: "Kolkata, West Bengal, India",
-      logo: "/Professor_website/assets/isi.png", // Replace with actual path or URL
+      logo: "/Professor_website/public/assets/isi.png", // Replace with actual path or URL
       desc: "Contributed to key pre-distribution in sensor networks under Prof. Bimal K. Roy.",
     },
     {
@@ -124,7 +124,7 @@ function About() {
       institution: "Silicon Institute of Technology, Sambalpur, Odisha, India",
       year: "Jul 2010 – Jan 2013",
       location: "Sambalpur, Odisha, India",
-      logo: "/Professor_website/assets/silicon.png", // Replace with actual path or URL
+      logo: "/Professor_website/public/assets/silicon.png", // Replace with actual path or URL
       desc: "Taught foundational computer science courses, inspiring the next generation.",
     },
   ];
@@ -166,31 +166,6 @@ function About() {
       year: "2021",
       desc: "Contributed to the success of an international research symposium.",
       image: "https://picsum.photos/200/150?random=3",
-    },
-  ];
-
-  const publications = [
-    {
-      title: "Geo-distributed Multi-tier Workload Migration",
-      journal: "IEEE Transactions on Services Computing (IF-11.019)",
-      year: 2023,
-      desc: "Explored workload migration strategies across geo-distributed cloud environments.",
-      link: "#",
-    },
-    {
-      title: "Decentralized Cloud Setup for Collaborative Markets",
-      journal: "IEEE Service Computing Conference (Core-A)",
-      year: 2019,
-      desc: "Introduced a novel decentralized cloud architecture for collaborative markets.",
-      link: "#",
-    },
-    {
-      title: "Indian Patent",
-      desc: "“A Stable Cloud-Alliance to Provide Uninterruptible Service” (Under Evaluation).",
-    },
-    {
-      title: "Research Focus",
-      desc: "Virtual Network Embedding, Cold Start Mitigation, Multi-Cloud Architectures.",
     },
   ];
 

@@ -18,93 +18,93 @@ const galleryTimeline = [
     date: "May 20, 2025",
     title: "Alma meet with Mr. Dipankar Sarma",
     images: [
-      "../src/assets/gallery/interaction/interaction-dipanker.jpeg"
+      "/Professor_website/assets/gallery/interaction/interaction-dipanker.jpeg"
     ]
   },
   {
     date: "March 12, 2025",
     title: "Successfully defence of Ph.D. thesis by Keerthan Kumar",
     images: [
-      "../src/assets/gallery/keerthan-defence/1.jpg",
-      "../src/assets/gallery/keerthan-defence/2.jpg"
+      "/Professor_website/assets/gallery/keerthan-defence/1.jpg",
+      "/Professor_website/assets/gallery/keerthan-defence/2.jpg"
     ]
   },
   {
     date: "January 08, 2025",
     title: "Best Poster Award in 17th COMSNETS 2025",
     images: [
-      "../src/assets/gallery/comsnet-2025/1.jpeg",
-      "../src/assets/gallery/comsnet-2025/2.jpeg",
-      "../src/assets/gallery/comsnet-2025/3.jpg"
+      "/Professor_website/assets/gallery/comsnet-2025/1.jpeg",
+      "/Professor_website/assets/gallery/comsnet-2025/2.jpeg",
+      "/Professor_website/assets/gallery/comsnet-2025/3.jpg"
     ]
   },
   {
     date: "January 07, 2025",
     title: "Our Students presented there work at 17th COMSNETS 2025",
     images: [
-      "../src/assets/gallery/comsnets-2025/1.jpg",
-      "../src/assets/gallery/comsnets-2025/2.jpg",
-      "../src/assets/gallery/comsnets-2025/3.jpg"
+      "/Professor_website/assets/gallery/comsnets-2025/1.jpg",
+      "/Professor_website/assets/gallery/comsnets-2025/2.jpg",
+      "/Professor_website/assets/gallery/comsnets-2025/3.jpg"
     ]
   },
   {
     date: "January 04, 2025",
     title: "Our Students presented there work at 26th ICDCN 2025",
     images: [
-      "../src/assets/gallery/icdcn-2025/1.jpeg",
-      "../src/assets/gallery/icdcn-2025/2.jpeg",
-      "../src/assets/gallery/icdcn-2025/3.jpeg"
+      "/Professor_website/assets/gallery/icdcn-2025/1.jpeg",
+      "/Professor_website/assets/gallery/icdcn-2025/2.jpeg",
+      "/Professor_website/assets/gallery/icdcn-2025/3.jpeg"
     ]
   },
   {
     date: "November 23, 2024",
     title: "Our students of 24' Batch attended convocation and Kalash got institute gold medal",
     images: [
-      "../src/assets/gallery/convocation-2024/1.jpeg",
-      "../src/assets/gallery/convocation-2024/2.jpeg",
-      "../src/assets/gallery/convocation-2024/3.jpeg"
+      "/Professor_website/assets/gallery/convocation-2024/1.jpeg",
+      "/Professor_website/assets/gallery/convocation-2024/2.jpeg",
+      "/Professor_website/assets/gallery/convocation-2024/3.jpeg"
     ]
   },
   {
     date: "March 11, 2024",
     title: "Dr. Addya attended 22nd Percom 2024 and also presented our work.",
     images: [
-      "../src/assets/gallery/percom-2024/1.jpeg",
-      "../src/assets/gallery/percom-2024/2.jpeg",
-      "../src/assets/gallery/percom-2024/3.jpeg",
-      "../src/assets/gallery/percom-2024/4.jpeg",
-      "../src/assets/gallery/percom-2024/5.jpeg"
+      "/Professor_website/assets/gallery/percom-2024/1.jpeg",
+      "/Professor_website/assets/gallery/percom-2024/2.jpeg",
+      "/Professor_website/assets/gallery/percom-2024/3.jpeg",
+      "/Professor_website/assets/gallery/percom-2024/4.jpeg",
+      "/Professor_website/assets/gallery/percom-2024/5.jpeg"
     ]
   },
   {
     date: "December 02, 2023",
     title: "Dr. Sourav Kanti Addya got Research Excellence Award 2023 by IEEE Computer Society Bangalore Chapter",
     images: [
-      "../src/assets/gallery/icdds-2023/1.jpeg"
+      "/Professor_website/assets/gallery/icdds-2023/1.jpeg"
     ]
   },
   {
     date: "August 28, 2023",
     title: "Successfully defence of M.Tech(Research) thesis by Jui Vijay Morey",
     images: [
-      "../src/assets/gallery/jui-defence/1.jpeg",
-      "../src/assets/gallery/jui-defence/2.jpeg",
-      "../src/assets/gallery/jui-defence/3.jpeg",
-      "../src/assets/gallery/jui-defence/4.jpeg"
+      "/Professor_website/assets/gallery/jui-defence/1.jpeg",
+      "/Professor_website/assets/gallery/jui-defence/2.jpeg",
+      "/Professor_website/assets/gallery/jui-defence/3.jpeg",
+      "/Professor_website/assets/gallery/jui-defence/4.jpeg"
     ]
   },
   {
     date: "January 09, 2021",
     title: "Best Poster Award in 13th COMSNETS 2021",
     images: [
-      "../src/assets/gallery/comsnet-2021/1.jpeg"
+      "/Professor_website/assets/gallery/comsnet-2021/1.jpeg"
     ]
   },
   {
     date: "October 27, 2020",
     title: "Book written by Dr. Sourav Kanti Addya entitled \"Cloud Network Management: An IOT based Framework\" got published",
     images: [
-      "../src/assets/gallery/books/cloud network management.jpeg"
+      "/Professor_website/assets/gallery/books/cloud network management.jpeg"
     ]
   }
 ];
