@@ -28,7 +28,7 @@ const googleScholarStats = {
 
 // Scopus Data
 const scopusStats = {
-  total: 445, // Total citations
+  total: 446, // Total citations
   hIndex: 11,
   documents: 57,
   topSources: [

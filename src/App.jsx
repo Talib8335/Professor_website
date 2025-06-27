@@ -16,10 +16,7 @@ import Testimonial from "./components/Testimonial";
 import SponsoredProjects from "./components/SponsoredProjects";
 import ProfileNoticeBoard from "./components/ProfileNoticeBoard";
 import ScholarStats from "./components/ScholarStats";
-//import ProfileStats from "./components/ProfileStats";
-//import NoticeBoard from "./components/NoticeBoard";
-//import OpenSourceContributions from "./components/OpenSourceContributions";
-//import AlumniSection from "./components/AlumniSection";
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -60,11 +57,36 @@ function App() {
 
   return (
     <>
-      {isLoading && (
-        <div className="fixed inset-0 bg-bgLight dark:bg-bgDark flex items-center justify-center z-50">
-          <div className="orb-loader animate-orb-pulse"></div>
-        </div>
-      )}
+    {isLoading && (
+  <div className="fixed inset-0 bg-white dark:bg-gray-900 flex items-center justify-center z-50 transition-colors duration-500">
+    {/* Loader Spinner */}
+    <div className="flex flex-col items-center">
+      <svg
+        className="animate-spin h-16 w-16 text-[#389589] dark:text-[#A78BFA] mb-4"
+        viewBox="0 0 50 50"
+        fill="none"
+      >
+        <circle
+          className="opacity-25"
+          cx="25"
+          cy="25"
+          r="20"
+          stroke="currentColor"
+          strokeWidth="6"
+        />
+        <path
+          className="opacity-75"
+          fill="currentColor"
+          d="M25 5a20 20 0 0 1 20 20h-6a14 14 0 1 0-14 14v6A20 20 0 0 1 25 5z"
+        />
+      </svg>
+      <span className="text-[#389589] dark:text-[#A78BFA] text-lg font-semibold font-sans animate-fade-in">
+        Loading, please wait...
+      </span>
+    </div>
+  </div>
+)}
+
       <Router>
         <div className="flex flex-col min-h-screen">
           <Header />
@@ -77,13 +99,9 @@ function App() {
                     PhotoCarousel={PhotoCarousel}
                     RecentNews={RecentNews}
                     SponsoredProjects={SponsoredProjects}
-                    //ProfileStats = {ProfileStats}
                     ProfileNoticeBoard = {ProfileNoticeBoard}
                     ScholarStats = {ScholarStats}
                     Testimonial ={Testimonial}
-                    //NoticeBoard = {NoticeBoard}
-                    //OpenSourceContributions={OpenSourceContributions}
-                    //AlumniSection={AlumniSection}
 
                   />
                 }
