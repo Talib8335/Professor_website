@@ -8,7 +8,7 @@ function SponsoredProjects() {
       pi: "Dr. Sourav Kanti Addya (Joint)",
       status: "Active",
       duration: "202X-202X",
-      logo: "/src/assets/tcs.png",
+      logo: "/Professor_website/assets/tcs.png",
       alt: "Tata Consultancy Services",
     },
     {
@@ -17,7 +17,7 @@ function SponsoredProjects() {
       pi: "Dr. Sourav Kanti Addya",
       status: "Active",
       duration: "202X-202X",
-      logo: "/src/assets/robosoft-technologies.png",
+      logo: "/Professor_website/assets/robosoft-technologies.png",
       alt: "Robosoft Technologies",
     },
     {
@@ -26,7 +26,7 @@ function SponsoredProjects() {
       pi: "Dr. Sourav Kanti Addya (Joint)",
       status: "Completed",
       duration: "202X-202X",
-      logo: "/src/assets/tcl.png",
+      logo: "/Professor_website/assets/tcl.png",
       alt: "Tata Communications Limited",
     },
   ];

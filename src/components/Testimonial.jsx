@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "Dr. A. Sharma",
     title: "Professor, IIT Bombay",
-    avatar: "/assets/testimonials/sharma.jpg",
+    avatar: "/Professor_website/assets/testimonials/sharma.jpg",
     text: "Working with Dr. Addya was a pleasure. His dedication to research and teaching is truly inspiring.",
   },
   {

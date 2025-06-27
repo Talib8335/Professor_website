@@ -8,10 +8,10 @@ const galleryTimeline = [
     date: "June 02, 2025",
     title: "Wrapping Up with Brilliance - Final M.Tech Presentations for 2025 Batch",
     images: [
-      "../src/assets/gallery/mtech-2025/1.jpeg",
-      "../src/assets/gallery/mtech-2025/2.jpeg",
-      "../src/assets/gallery/mtech-2025/3.jpeg",
-      "../src/assets/gallery/mtech-2025/4.jpeg"
+      "/Professor_website/assets/gallery/mtech-2025/1.jpeg",
+      "/Professor_website/assets/gallery/mtech-2025/2.jpeg",
+      "/Professor_website/assets/gallery/mtech-2025/3.jpeg",
+      "/Professor_website/assets/gallery/mtech-2025/4.jpeg"
     ]
   },
   {
