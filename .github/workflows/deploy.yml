@@ -5,6 +5,7 @@ on:
     branches:
       - main
 
+# Allow write access to push to gh-pages
 permissions:
   contents: write
 
@@ -19,6 +20,8 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v4
+        with:
+          node-version: '18' # or your preferred version
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
@@ -48,5 +51,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ Secrets.PERSONAL_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          force_orphan: true
