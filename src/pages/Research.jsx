@@ -825,22 +825,24 @@ if (filter === "conference") {
     Publications
   </h2>
   {/* Filter Bar with Counts */}
- <div className="flex justify-center mb-8 space-x-4">
+ <div className="flex flex-wrap justify-center mb-8 gap-x-2 gap-y-2">
   {FILTERS.map((type) => (
     <button
       key={type}
       onClick={() => setFilter(type)}
-      className={`px-4 py-2 rounded-full font-semibold font-body ${
-        filter === type
-          ? "bg-[#389589] text-white dark:bg-[#A78BFA] dark:text-white" // Selected button in light and dark mode
-          : "bg-gray-200 text-gray-900 dark:bg-gray-700 dark:text-white dark:hover:bg-[#A78BFA] dark:hover:text-white hover:bg-[#389589] hover:text-white"
-      } transition-colors duration-300`}
+      className={`px-3 py-1 md:px-4 md:py-2 rounded-full font-semibold font-body text-xs sm:text-sm md:text-base
+        ${
+          filter === type
+            ? "bg-[#389589] text-white dark:bg-[#A78BFA] dark:text-white"
+            : "bg-gray-200 text-gray-900 dark:bg-gray-700 dark:text-white dark:hover:bg-[#A78BFA] dark:hover:text-white hover:bg-[#389589] hover:text-white"
+        } transition-colors duration-300`}
       aria-label={`Filter by ${type}`}
     >
       {type.charAt(0).toUpperCase() + type.slice(1)} ({counts[type]})
     </button>
   ))}
 </div>
+
 
 
   {/* Publication List */}

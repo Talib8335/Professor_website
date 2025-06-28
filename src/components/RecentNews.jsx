@@ -105,7 +105,7 @@ function RecentNews() {
           </div>
           <div
             className="mt-10 overflow-hidden"
-            style={{ maxHeight: "15vw", position: "relative" }}
+            style={{ maxHeight: "18vw", position: "relative" }}
           >
             <div
               className="animate-marquee"

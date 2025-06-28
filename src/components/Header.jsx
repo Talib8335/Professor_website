@@ -89,7 +89,7 @@ function Header() {
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
-            className="text-[#389589] dark:text-[#A78BFA] text-2xl focus:outline-none focus:ring-2 focus:ring-[#389589]/50 dark:focus:ring-[#A78BFA]/50"
+            className="text-[#389589] dark:text-[#A78BFA] text-2xl focus:outline-none "
           >
             {menuOpen ? <FaTimes /> : <FaBars />}
           </button>

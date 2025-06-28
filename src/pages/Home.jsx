@@ -27,165 +27,193 @@ function Home({ PhotoCarousel, RecentNews, SponsoredProjects, ProfileNoticeBoard
   return (
     <div className="min-h-screen bg-bgLight dark:bg-bgDark text-textLight dark:text-textDark font-['Inter']">
       {/* Hero Section */}
-      <section className="hero-section relative 
-       backdrop-blur-lg py-16 min-h-[80vh] overflow-hidden">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-12">
-          {/* Left Side - Text Content */}
-          <div className="w-full md:w-2/3 space-y-4 animate-fade-in-up animation-delay-200">
-            <h1 className="text-4xl md:text-6xl font-['Playfair_Display'] font-extrabold text-gray-800 dark:text-gray-100 drop-shadow-lg animate-pulse-slow">
-              <span className="inline-block w-full">
-                <Typewriter
-                  words={['Dr. Sourav Kanti Addya']}
-                  loop={true}
-                  cursor={false}
-                  typeSpeed={80}
-                  deleteSpeed={30}
-                  delaySpeed={2500}
-                />
-              </span>
-            </h1>
+      <section className="hero-section relative backdrop-blur-lg py-16 min-h-[80vh] overflow-hidden max-w-full">
+  {/* --- Mobile: Dot Pattern SVG Background --- */}
+  <div className="absolute inset-0 md:hidden z-0 overflow-x-hidden">
+    <svg
+      className="w-full h-full absolute inset-0"
+      width="100%"
+      height="100%"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ minHeight: 400 }}
+    >
+      <defs>
+        <pattern id="dotPattern" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+          <circle cx="14" cy="14" r="2.5" fill="#b2ebf2" opacity="0.33" />
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#dotPattern)" />
+    </svg>
+  </div>
 
-            <p className="text-2xl md:text-3xl font-['Raleway'] font-semibold text-gray-700 dark:text-gray-200 tracking-wider tagline">
-              <span className="inline-block w-full">
-                <Typewriter
-                  words={['Advancing Knowledge Through Research & Teaching']}
-                  loop={true}
-                  cursor
-                  cursorStyle="_"
-                  typeSpeed={60}
-                  deleteSpeed={30}
-                  delaySpeed={3500}
-                />
-              </span>
-            </p>
+  <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-12 relative z-10 max-w-full overflow-x-hidden">
+    {/* --- Profile Image: Top on mobile, right on desktop --- */}
+    <div className="w-full flex justify-center md:hidden mb-6">
+      <div className="relative overflow-hidden w-64 h-85 bg-gradient-to-tr from-[#e0f2f1] via-[#b2ebf2] to-[#389589] shadow-xl border-4 border-white flex items-center justify-center rounded-[50%/60%]">
+        <img
+          src="/Professor_website/assets/skaddya.png"
+          alt="Dr. Sourav Kaddya"
+          className="w-full h-full object-cover"
+          loading="eager"
+          style={{ borderRadius: "50% 50% 50% 50% / 60% 60% 60% 60%" }}
+          onError={(e) => { e.target.src = 'https://via.placeholder.com/400x400'; }}
+        />
+      </div>
+    </div>
 
-            {/* Info Panel */}
-            <div className="text-base md:text-lg leading-relaxed space-y-4 font-['Raleway'] p-8 rounded-xl ">
-              {/* Designation and Department */}
-              <p className="space-y-1">
-                <strong className="text-gray-800 dark:text-gray-100 font-semibold">Assistant Professor</strong><br />
-                <span className="text-sm flex items-center gap-1 text-gray-600 dark:text-gray-300">
-                  Department of Computer Science and Engineering
-                  <a
-                    href="#"
-                    className="text-[#389589] dark:text-purple hover:text-[#2b6f6a] dark:hover:text-purple-dark transition"
-                  >
-                    <HiLink size={16} />
-                  </a>
-                </span>
-                <span className="text-sm flex items-center gap-1 text-gray-600 dark:text-gray-300">
-                  National Institute of Technology Karnataka
-                  <a
-                    href="#"
-                    className="text-[#389589] dark:text-purple hover:text-[#2b6f6a] dark:hover:text-purple-dark transition"
-                  >
-                    <HiLink size={16} />
-                  </a>
-                </span>
-                <span className="block text-gray-500 dark:text-gray-400">Surathkal, Mangalore – 575025</span>
-              </p>
+    {/* --- Left Side - Text Content (mobile: below photo, desktop: left) --- */}
+    <div className="w-full md:w-2/3 space-y-4 animate-fade-in-up animation-delay-200 text-center md:text-left">
+      <h1 className="text-3xl md:text-6xl font-['Playfair_Display'] font-extrabold text-gray-800 dark:text-gray-100 drop-shadow-lg animate-pulse-slow">
+        <span className="inline-block w-full">
+          <Typewriter
+            words={['Dr. Sourav Kanti Addya']}
+            loop={true}
+            cursor={false}
+            typeSpeed={80}
+            deleteSpeed={30}
+            delaySpeed={2500}
+          />
+        </span>
+      </h1>
+      {/* Hide tagline on mobile, show on md+ */}
+      <p className="hidden md:block text-3xl font-['Raleway'] font-semibold text-gray-700 dark:text-gray-200 tracking-wider tagline">
+        <span className="inline-block w-full">
+          <Typewriter
+            words={['Advancing Knowledge Through Research & Teaching']}
+            loop={true}
+            cursor
+            cursorStyle="_"
+            typeSpeed={60}
+            deleteSpeed={30}
+            delaySpeed={3500}
+          />
+        </span>
+      </p>
 
-              {/* Office */}
-              <p className="flex items-start gap-2 text-gray-600 dark:text-gray-300">
-                <HiOutlineOfficeBuilding className="text-[#389589] dark:text-purple mt-1" size={20} />
-                <span><strong className="text-gray-800 dark:text-gray-100">Office:</strong> Room No–314, Dept. of CSE, NITK, Surathkal.</span>
-              </p>
+      {/* Info Panel and Social Links */}
+      <div className="text-base md:text-lg leading-relaxed space-y-4 font-['Raleway'] p-8 rounded-xl ">
+        <p className="space-y-1">
+          <strong className="text-gray-800 dark:text-gray-100 font-semibold">Assistant Professor</strong><br />
+          <span className="text-sm flex items-center gap-1 text-gray-600 dark:text-gray-300 justify-center md:justify-start">
+            Department of Computer Science and Engineering
+            <a
+              href="#"
+              className="text-[#389589] dark:text-purple hover:text-[#2b6f6a] dark:hover:text-purple-dark transition ml-1"
+            >
+              <HiLink size={16} />
+            </a>
+          </span>
+          <span className="text-sm flex items-center gap-1 text-gray-600 dark:text-gray-300 justify-center md:justify-start">
+            National Institute of Technology Karnataka
+            <a
+              href="#"
+              className="text-[#389589] dark:text-purple hover:text-[#2b6f6a] dark:hover:text-purple-dark transition ml-1"
+            >
+              <HiLink size={16} />
+            </a>
+          </span>
+          <span className="block text-gray-500 dark:text-gray-400">Surathkal, Mangalore – 575025</span>
+        </p>
 
-              {/* Phone */}
-              <p className="flex items-start gap-2 text-gray-600 dark:text-gray-300">
-                <FaPhoneAlt className="text-[#389589] dark:text-purple mt-1" size={16} />
-                <span><strong className="text-gray-800 dark:text-gray-100">Phone:</strong> +91-824-247-3414</span>
-              </p>
+        <p className="flex items-start gap-2 text-gray-600 dark:text-gray-300 justify-center md:justify-start">
+          <HiOutlineOfficeBuilding className="text-[#389589] dark:text-purple mt-1" size={20} />
+          <span><strong className="text-gray-800 dark:text-gray-100">Office:</strong> Room No–314, Dept. of CSE, NITK, Surathkal.</span>
+        </p>
+        <p className="flex items-start gap-2 text-gray-600 dark:text-gray-300 justify-center md:justify-start">
+          <FaPhoneAlt className="text-[#389589] dark:text-purple mt-1" size={16} />
+          <span><strong className="text-gray-800 dark:text-gray-100">Phone:</strong> +91-824-247-3414</span>
+        </p>
+        <p className="flex items-start gap-2 text-gray-600 dark:text-gray-300 justify-center md:justify-start">
+          <HiOutlineMail className="text-[#389589] dark:text-purple mt-1" size={20} />
+          <span>
+            <strong className="text-gray-800 dark:text-gray-100">Email:</strong>{' '}
+            <a
+              href="mailto:souravkaddya@nitk.edu.in"
+              className="text-[#389589] dark:text-purple hover:text-[#2b6f6a] dark:hover:text-purple-dark underline transition"
+            >
+              souravkaddya[AT]nitk[DOT]edu[DOT]in
+            </a>
+          </span>
+        </p>
 
-              {/* Email */}
-              <p className="flex items-start gap-2 text-gray-600 dark:text-gray-300">
-                <HiOutlineMail className="text-[#389589] dark:text-purple mt-1" size={20} />
-                <span>
-                  <strong className="text-gray-800 dark:text-gray-100">Email:</strong>{' '}
-                  <a
-                    href="mailto:souravkaddya@nitk.edu.in"
-                    className="text-[#389589] dark:text-purple hover:text-[#2b6f6a] dark:hover:text-purple-dark underline transition"
-                  >
-                    souravkaddya[AT]nitk[DOT]edu[DOT]in
-                  </a>
-                </span>
-              </p>
-
-              {/* Social/Research Links */}
-              <div className="mt-4 flex flex-wrap items-center gap-3 text-sm">
-                <a
-                  href="https://scholar.google.com/citations?user=4TxJGusAAAAJ&hl=en"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center px-3 py-2 glass-light border border-gray-300 dark:glass-dark dark:border-none hover:scale-110 rounded-md transition-transform duration-300"
-                >
-                  <FaGoogle className="mr-2 text-[#389589] dark:text-purple" />
-                  <span className="text-gray-800 dark:text-gray-200">Google Scholar</span>
-                </a>
-                <a
-                  href="https://dblp.org/pid/177/2106"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center px-3 py-2 glass-light border border-gray-300 dark:glass-dark dark:border-none hover:scale-110 rounded-md transition-transform duration-300"
-                >
-                  <FaLink className="mr-2 text-[#389589] dark:text-purple" />
-                  <span className="text-gray-800 dark:text-gray-200">DBLP</span>
-                </a>
-                <a
-                  href="https://www.scopus.com/authid/detail.uri?authorId=56538204500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center px-3 py-2 glass-light border border-gray-300 dark:glass-dark dark:border-none hover:scale-110 rounded-md transition-transform duration-300"
-                >
-                  <FaLink className="mr-2 text-[#389589] dark:text-purple" />
-                  <span className="text-gray-800 dark:text-gray-200">Scopus</span>
-                </a>
-                <a
-                  href="https://orcid.org/0000-0001-8166-2847"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center px-3 py-2 glass-light border border-gray-300 dark:glass-dark dark:border-none hover:scale-110 rounded-md transition-transform duration-300"
-                >
-                  <FaLink className="mr-2 text-[#389589] dark:text-purple" />
-                  <span className="text-gray-800 dark:text-gray-200">ORCID</span>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/sourav-kanti-addya-ph-d-a5125b20/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center px-3 py-2 glass-light border border-gray-300 dark:glass-dark dark:border-none hover:scale-110 rounded-md transition-transform duration-300"
-                >
-                  <FaLinkedin className="mr-2 text-[#389589] dark:text-purple" />
-                  <span className="text-gray-800 dark:text-gray-200">LinkedIn</span>
-                </a>
-                <a
-                  href="https://github.com/souravaddya/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center px-3 py-2 glass-light border border-gray-300 dark:glass-dark dark:border-none hover:scale-110 rounded-md transition-transform duration-300"
-                >
-                  <FaGithub className="mr-2 text-[#389589] dark:text-purple" />
-                  <span className="text-gray-800 dark:text-gray-200">GitHub</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Side - Image */}
-          <div className="w-full md:w-1/4 mt-8 md:mt-0 flex justify-center">
-            <div className="relative group overflow-hidden rounded-full">
-              <img
-                src="/Professor_website/assets/skaddya.png"
-                alt="Dr. Sourav Kaddya"
-                className="w-[440px] h-[460px] object-cover"
-                loading="eager"
-                onError={(e) => { e.target.src = 'https://via.placeholder.com/400x400'; }}
-              />
-            </div>
-          </div>
+        {/* Social/Research Links */}
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-sm">
+          <a
+            href="https://scholar.google.com/citations?user=4TxJGusAAAAJ&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center px-3 py-2 glass-light border border-gray-300 dark:glass-dark dark:border-none hover:scale-110 rounded-md transition-transform duration-300"
+          >
+            <FaGoogle className="mr-2 text-[#389589] dark:text-purple" />
+            <span className="text-gray-800 dark:text-gray-200">Google Scholar</span>
+          </a>
+          <a
+            href="https://dblp.org/pid/177/2106"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center px-3 py-2 glass-light border border-gray-300 dark:glass-dark dark:border-none hover:scale-110 rounded-md transition-transform duration-300"
+          >
+            <FaLink className="mr-2 text-[#389589] dark:text-purple" />
+            <span className="text-gray-800 dark:text-gray-200">DBLP</span>
+          </a>
+          <a
+            href="https://www.scopus.com/authid/detail.uri?authorId=56538204500"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center px-3 py-2 glass-light border border-gray-300 dark:glass-dark dark:border-none hover:scale-110 rounded-md transition-transform duration-300"
+          >
+            <FaLink className="mr-2 text-[#389589] dark:text-purple" />
+            <span className="text-gray-800 dark:text-gray-200">Scopus</span>
+          </a>
+          <a
+            href="https://orcid.org/0000-0001-8166-2847"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center px-3 py-2 glass-light border border-gray-300 dark:glass-dark dark:border-none hover:scale-110 rounded-md transition-transform duration-300"
+          >
+            <FaLink className="mr-2 text-[#389589] dark:text-purple" />
+            <span className="text-gray-800 dark:text-gray-200">ORCID</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sourav-kanti-addya-ph-d-a5125b20/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center px-3 py-2 glass-light border border-gray-300 dark:glass-dark dark:border-none hover:scale-110 rounded-md transition-transform duration-300"
+          >
+            <FaLinkedin className="mr-2 text-[#389589] dark:text-purple" />
+            <span className="text-gray-800 dark:text-gray-200">LinkedIn</span>
+          </a>
+          <a
+            href="https://github.com/souravaddya/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center px-3 py-2 glass-light border border-gray-300 dark:glass-dark dark:border-none hover:scale-110 rounded-md transition-transform duration-300"
+          >
+            <FaGithub className="mr-2 text-[#389589] dark:text-purple" />
+            <span className="text-gray-800 dark:text-gray-200">GitHub</span>
+          </a>
         </div>
+      </div>
+    </div>
 
-        {/* Enhanced 3D Hexagonal Grid with Advanced Effects */}
+    {/* --- Profile Image: right side on desktop only --- */}
+    <div className="hidden md:flex w-full md:w-1/4 mt-8 md:mt-0 flex justify-center">
+      <div className="relative group overflow-hidden rounded-full">
+        <img
+          src="/Professor_website/assets/skaddya.png"
+          alt="Dr. Sourav Kaddya"
+          className="w-[440px] h-[460px] object-cover"
+          loading="eager"
+          onError={(e) => { e.target.src = 'https://via.placeholder.com/400x400'; }}
+        />
+      </div>
+    </div>
+  </div>
+
+  {/* --- Desktop/Tablet: SVG polygon grid, hidden on mobile --- */}
+  <div className="hidden md:block absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
+    {/* ...your SVG code here... */}
+    {/* Enhanced 3D Hexagonal Grid with Advanced Effects */}
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
           <svg className="absolute w-full h-full opacity-30 dark:opacity-35" viewBox="0 0 1440 600" preserveAspectRatio="none">
             <defs>
@@ -229,7 +257,9 @@ function Home({ PhotoCarousel, RecentNews, SponsoredProjects, ProfileNoticeBoard
             </g>
           </svg>
         </div>
-      </section>
+  </div>
+</section>
+
 
       <PhotoCarousel />
       <RecentNews />
